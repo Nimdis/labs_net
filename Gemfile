@@ -11,22 +11,23 @@ group :assets do
 end
 
 group :default do
-  gem "default_value_for", "~> 3.0.0"
   gem 'activeadmin', :github => 'gregbell/active_admin'
   gem 'bcrypt-ruby', '~> 3.1.4'
   gem 'bootstrap-sass', '~> 3.2.0'
   gem 'cancan'
+  gem 'default_value_for', '~> 3.0.0'
   gem 'devise'
   gem 'devise-i18n' , :github => 'tigrish/devise-i18n'
   gem 'formtastic'
-  #gem 'friendly_id', '~> 5.0.0'
   gem 'haml'
   gem 'haml-rails'
   gem 'has_scope'
   gem 'inherited_resources', '~>1.4.1'
+  gem 'kaminari'
   gem 'mysql2'
+  gem 'paperclip'
   gem 'rails'
-  gem 'rich', :github => 'bastiaanterhorst/rich'
+  gem 'rich', github: 'nimdis/rich'
   gem 'russian'
   gem 'sprockets-rails', :require => 'sprockets/railtie'
   gem 'turbolinks'

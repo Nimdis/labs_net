@@ -1,0 +1,36 @@
+ru:
+  user:
+    role:
+      admin: "Админ"
+      institution: "Учреждение"
+      user: "Пользователь"
+      banned: "Забанен"
+    will_paginate:
+      previous_label: "&#8592; Назад"
+      next_label: "Вперед &#8594;"
+      page_gap: "&hellip;"
+  activerecord:
+    models:
+      comment:
+        many: "Комментариев"
+        few: "Комментария"
+        other: "Комментарии"
+        one: "Комментарий"
+      feedback_question:
+        many: "Отзывов"
+        few: "Отзыва"
+        other: "Отзывы"
+        one: "Отзыв"
+      user:
+        many: "Пользователи"
+        few: "Пользователи"
+        other: "Пользователи"
+        one: "Пользователь"
+      news:
+        few: "Новости"
+        many: "Новостей"
+        other: "Новости"
+        one: "Новость"
+      feedback_answer:
+        few: "Ответа"
+        many: "Ответов"
