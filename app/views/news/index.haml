@@ -1,0 +1,12 @@
+.index
+  .news
+    %h2
+      Новости
+    - collection.each do |news|
+      .item
+        %h4
+          = link_to news.title, news
+        %div
+          = raw news.short_body
+
+    = will_paginate collection
