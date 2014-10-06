@@ -1,0 +1,26 @@
+!!! 5
+%html
+  %head
+    %title
+      Лабораторная сети
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body{"cz-shortcut-listen" => "true", "data-feedly-mini" => "yes"}
+    .navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle.collapsed{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          =link_to 'Лабораторная сети', :root, class: 'navbar-brand'
+        .collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li.active
+              =link_to 'Новости', 'news'
+            %li
+              =link_to 'Новости', 'news'
+    .container.main
+      = yield
