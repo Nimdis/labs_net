@@ -7,6 +7,6 @@ class News < ActiveRecord::Base
   validates :short_body, :presence => true
 
   def date
-    created_at.strftime("%B %d, %Y")
+    Russian::strftime(created_at, "%B %d, %Y")
   end
 end
