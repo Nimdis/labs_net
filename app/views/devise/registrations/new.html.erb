@@ -1,0 +1,19 @@
+<h2>Регистрация</h2>
+<p>Для того чтобы начать совершать действия на сайте необходимо пройти подтверждение регистрации и получение прав учреждения. Данную процедуру проводит администратор сайта.</p>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="form-group"><%= f.label :email %>
+  <%= f.email_field :email, autofocus: true, class: 'form-control' %></div>
+
+  <div class="form-group"><%= f.label :password %>
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control' %></div>
+
+  <div class="form-group"><%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %></div>
+
+  <div><%= f.submit "Регистрация", class: 'btn btn-default' %></div>
+<% end %>
+
+<div class="enter"><%= render "devise/shared/links" %></div>

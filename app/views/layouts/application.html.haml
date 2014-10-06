@@ -19,8 +19,18 @@
         .collapse.navbar-collapse
           %ul.nav.navbar-nav
             %li.active
-              =link_to 'Новости', 'news'
+              =link_to 'Новости', '/news'
             %li
-              =link_to 'Новости', 'news'
+              =link_to 'Новости', '/news'
+            - if admin_user_signed_in?
+              %li.sign_out
+                = link_to 'Выход', destroy_admin_user_session_path
+              %li.edit_profile
+                = link_to current_admin_user.email, edit_admin_user_registration_path
+            - else
+              %li.sign_up
+                = link_to 'Регистрация', new_admin_user_registration_path, data: {'no-turbolink' => "true"}
+              %li.sign_in
+                = link_to 'Вход', new_admin_user_session_path
     .container.main
       = yield

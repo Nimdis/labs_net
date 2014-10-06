@@ -21,7 +21,7 @@ ru:
         few: "Отзыва"
         other: "Отзывы"
         one: "Отзыв"
-      user:
+      admin_user:
         many: "Пользователи"
         few: "Пользователи"
         other: "Пользователи"
@@ -34,3 +34,27 @@ ru:
       feedback_answer:
         few: "Ответа"
         many: "Ответов"
+    attributes:
+      feedback_question:
+        email: "Email"
+        state: "Состояние"
+        name: "Название"
+        subject: "Заголовок"
+        body: "Содержание"
+      feedback_answer:
+        body: "Содержание"
+      admin_user:
+        email: "Email"
+        current_sign_in_at: "Дата последнего входа"
+        sign_in_count: "Количество входов"
+        created_at: "Дата создания"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+        current_password: "Текущий пароль"
+        role: "Роль"
+      news:
+        title: "Заголовок"
+        short_body: "Краткое cодержание"
+        body: "Содержание"
+        created_at: "Дата создания"
+        updated_at: "Дата изменения"
